@@ -12,6 +12,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
         body {
@@ -32,6 +33,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 .navs span {
    cursor: pointer;
@@ -42,6 +46,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    position: relative;
+    top: -83px;
 }
 
 .flex{
@@ -61,6 +67,10 @@
     padding-top: 0; 
 }
 
+.margin a{
+    text-decoration: none;
+    color: #fff;
+}
 .icon{
     margin: 10px;
 }
@@ -83,7 +93,7 @@
     align-items: center;
 }
 .hero-title{
-    padding-top:150px;
+    padding-top:200px;
     font-size: 13rem;
     padding-bottom: 0;
     font-weight: 700;
@@ -167,6 +177,8 @@
 .about-section{
     padding: 90px 8%;
     background: #fdfaf6;
+    position: relative;
+    top: -70px;
 }
 
 .about-wrap{
@@ -231,12 +243,79 @@
         height: 320px;
     }
 }
+
+
+.values-section{
+  padding: 90px 8%;
+  background: var(--bg);
+  text-align: center;
+  display: none;
+}
+
+/* GRID */
+.values-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 34px;
+}
+
+/* CARD */
+.value-card{
+  background: #fff;
+  padding: 42px 32px;
+  border-radius: 26px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+  transition: 
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  cursor: default;
+}
+
+/* ICON */
+.value-card i{
+  font-size: 2.2rem;
+  color: orange;
+  margin-bottom: 18px;
+  transition: transform 0.4s ease;
+}
+
+/* TEXT */
+.value-card h4{
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.value-card p{
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* HOVER EFFECT */
+.value-card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.15);
+}
+
+.value-card:hover i{
+  transform: scale(1.15) rotate(-4deg);
+}
+
+/* MOBILE */
+@media(max-width: 768px){
+  .values-title{
+    font-size: 2rem;
+  }
+}
+
+
 .parallax-separator{
     height: 45vh;
     background-image: url("public/background/background.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    top: -83px;
 
     position: relative;
 }

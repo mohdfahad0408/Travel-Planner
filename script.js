@@ -9,3 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("");
   });
 });
+
+
+function show(){
+  document.querySelector(".values-section").style.display="block"
+    document.querySelector(".about-btn").style.display="none"
+
+}

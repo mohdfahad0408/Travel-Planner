@@ -4,31 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Travel Layout</title>
+    <title>Travel</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="public/logo/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
 
-    <div class="bg">
-        <header class=" nav">
-            <div><img src="public/logo/logo.png" alt="logo" class="logo"></div>
-            <div class="navs">
-                <span class="margin">Home</span>
-                <span class="margin">About Us</span>
-                <span class="margin">Travel Spots</span>
-                <span class="margin">Blogs</span>
-                <span class="margin">Tour Planner</span>
-                <span>Contact Us</span>
-            </div>
-            <div>
-                <span class="bi-search icon"></span>
-                <span class="bi-person icon"></span>
-                <span class="button">Book Now</span>
-            </div>
-        </header>
+
+    <header class=" nav">
+        <div><img src="public/logo/logo.png" alt="logo" class="logo"></div>
+        <div class="navs">
+            <span class="margin"><a href="#home">Home</a></span>
+            <span class="margin"><a href="#about-us">About Us</a></span>
+            <span class="margin"><a href="#travel">Travel Spots</a></span>
+            <span class="margin"><a href="">Blogs</a></span>
+            <span class="margin"><a href="">Tour Planner</a></span>
+            <span class="margin"><a href="#footer">Contact Us</a></span>
+        </div>
+        <div>
+            <span class="bi-search icon"></span>
+            <span class="bi-person icon"></span>
+            <span class="button">Book Now</span>
+        </div>
+    </header>
+    <div class="bg" id="home">
         <div class="hero ">
             <div class="titles">
                 <h1 class="hero-title">TRAVEL</h1>
@@ -44,10 +46,10 @@
     </div>
     <div class="parallax-separator"></div>
 
-    <section class="about-section">
+    <section class="about-section" id="about-us">
         <div class="about-wrap">
 
-            
+
             <div class="about-text fade">
                 <span class="subtitle">about us :</span>
 
@@ -58,16 +60,55 @@
                     WANDERLUST DESIRES
                 </h2>
 
-                <button class="about-btn">Learn More</button>
+                <button class="about-btn" onclick="show()">Learn More</button>
             </div>
 
+
             
+
+
             <div class="about-image fade delay-1">
                 <img src="public/background/travel.jpeg" alt="traveler">
             </div>
 
         </div>
+         <section class="values-section" >
+                    <h2 class="subtitle">What We Stand For</h2>
+
+                    <div class="values-grid">
+
+                        <div class="value-card">
+                            <i class="bi bi-compass"></i>
+                            <h4>Smart Planning</h4>
+                            <p>
+                                Every journey begins with clarity. We design tools that help
+                                travelers make confident, informed decisions.
+                            </p>
+                        </div>
+
+                        <div class="value-card">
+                            <i class="bi bi-globe"></i>
+                            <h4>Global Perspective</h4>
+                            <p>
+                                Built for explorers across the world, with insights that adapt
+                                to destinations, cultures, and conditions.
+                            </p>
+                        </div>
+
+                        <div class="value-card">
+                            <i class="bi bi-heart"></i>
+                            <h4>User First</h4>
+                            <p>
+                                Simplicity, comfort, and experience guide every feature we
+                                create—technology that feels human.
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
     </section>
+
+    
     <div class="parallax-separator"></div>
     <section class="section">
         <header class="header-title">
@@ -212,7 +253,7 @@
         <a href="#" class="explore-btn">Explore All</a>
     </section>
 
-    <section class="container">
+    <section class="container" id="travel">
         <header class="header-title">
             <span class="subtitle">destinations :</span>
             <h1>BEST TRAVEL PLACES</h1>
@@ -397,10 +438,10 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-wrap">
 
-            
+
             <div class="footer-col">
                 <img src="public/logo/logob.png" class="footer-logo" alt="logo">
                 <p class="footer-text">
