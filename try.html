@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<style>
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: var(--bg);
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+    .nav{
+    height: 10vh;
+    background-color: rgba(0, 0 , 0, 0.2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navs span {
+   cursor: pointer;
+}
+.bg{
+    background-image: url(public/background/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    top: -83px;
+}
+.logo{
+    width: 100px;
+
+}
+.margin{
+    margin-right: 40px;
+    padding-top: 0; 
+}
+
+.margin a{
+    text-decoration: none;
+    color: #fff;
+}
+.button{
+    width: 110px;
+    background:linear-gradient(135deg,#ff7b40,#ff9d63);
+    border-radius: 6px;
+    margin: 0 20px;
+    padding: 8px 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.icon{
+    margin: 10px;
+}
+</style>
+<body>
+    <header class="nav">
+        <div><img src="public/logo/logo.png" alt="logo" class="logo"></div>
+        <div class="navs">
+            <span class="margin"><a href="#home">Home</a></span>
+            <span class="margin"><a href="#about-us">About Us</a></span>
+            <span class="margin"><a href="#travel">Travel Spots</a></span>
+            <span class="margin"><a href="">Blogs</a></span>
+            <span class="margin"><a href="">Tour Planner</a></span>
+            <span class="margin"><a href="#footer">Contact Us</a></span>
+        </div>
+        <div>
+            <span class="bi-search icon"></span>
+            <span class="bi-person icon"></span>
+            <span class="button">Book Now</span>
+        </div>
+    </header>
+</body>
+</html>
