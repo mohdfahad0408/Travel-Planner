@@ -43,9 +43,9 @@ Travel-Planner/
 
 ├── public/            # Contains static assets
 
-│   ├── images/        # Images used in the project
+│  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── images/        # Images used in the project
 
-│   └── icons/         # Icons used in UI
+│  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── icons/         # Icons used in UI
 
 │
 
