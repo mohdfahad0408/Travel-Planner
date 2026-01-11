@@ -27,21 +27,34 @@ This project was created to practice:
 - CSS  
 - JavaScript  
 
-## 📂 Folder Structure
+## 📁 Project Folder Structure
 
-Travel-Planner/
+Travel-Planner/ 
 
 │
 
-├── map/ # Map related files
+├── index.html        # Main HTML file (entry point of the application)
 
-├── public/ # Public assets
+├── style.css         # CSS file for styling the UI
 
-├── index.html # Main HTML file
+├── script.js         # JavaScript file for functionality and logic
 
-├── style.css # Styling
+│
 
-└── script.js # JavaScript logic
+├── public/            # Contains static assets
+
+│   ├── images/        # Images used in the project
+
+│   └── icons/         # Icons used in UI
+
+│
+
+├── map/               # Map-related files or configurations
+
+│
+
+└── README.md          # Project documentation
+
 
 
 
