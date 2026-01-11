@@ -47,7 +47,7 @@ function generatePlan(){
           </ul>
         </div>
 
-        <a href="/map/map.html" class="planner-btn weatherc"> See weather Condition</a>
+        <a href="../map/map.html" class="planner-btn weatherc"> See weather Condition</a>
 
         <div class="map-box">
           <iframe
